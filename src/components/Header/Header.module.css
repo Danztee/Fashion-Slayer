@@ -1,0 +1,52 @@
+.header {
+  color: #fff;
+}
+
+.listContainer {
+  background: #333333;
+  height: 4rem;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+li {
+  margin-top: 1.4rem;
+}
+
+.hero img {
+  width: 100%;
+  margin-top: -1rem;
+  height: 39.8em;
+}
+
+.sliderBtn {
+  position: absolute;
+  width: 100%;
+  bottom: 40%;
+}
+
+.right {
+  float: right;
+  margin-right: 2rem;
+  background: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 6px;
+}
+
+.left {
+  margin-left: 2rem;
+  background: #000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 6px;
+}

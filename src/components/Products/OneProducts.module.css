@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #febd0b;
+  padding: 1rem;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 15px 15px 0 0;
+}
+
+.products {
+  margin: 0;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+}
+
+.ProductList {
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  box-shadow: 0px 4px 6px -4px rgba(16, 24, 40, 0.1),
+    0px 10px 15px -3px rgba(16, 24, 40, 0.1);
+
+  border-radius: 15px;
+}
+
+.headerText {
+  position: relative;
+  top: 6px;
+}
+
+.stars {
+  font-size: 6px;
+  color: #ffd700;
+}

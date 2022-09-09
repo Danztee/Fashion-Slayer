@@ -1,0 +1,15 @@
+.support {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#star {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #d9d9d9;
+}

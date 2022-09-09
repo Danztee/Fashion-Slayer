@@ -1,0 +1,50 @@
+.ProductList {
+  background: #ffffff;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+
+  box-shadow: 0px 4px 6px -4px rgba(16, 24, 40, 0.1),
+    0px 10px 15px -3px rgba(16, 24, 40, 0.1);
+}
+
+.tabs {
+  display: flex;
+  font-weight: bold;
+  list-style: none;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.active {
+  border-bottom: solid 3px #ff0000;
+  padding-bottom: 0.5rem;
+}
+
+.products {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.title {
+  padding: 0 1rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.stars {
+  font-size: 12px;
+  color: #ffd700;
+}

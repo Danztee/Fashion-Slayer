@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background: #bb4430;
+  padding: 1rem;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 15px 15px 0 0;
+}
+
+.stars {
+  font-size: 10px;
+  color: #ffd700;
+}

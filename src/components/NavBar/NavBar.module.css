@@ -1,0 +1,67 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.input {
+  width: 25rem;
+  padding: 0.8rem;
+
+  outline: none;
+  border: none;
+}
+
+.btn {
+  padding: 0.8rem;
+  margin-left: 1rem;
+  width: 6rem;
+  background: #febd0b;
+  color: #fff;
+  cursor: pointer;
+
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.accountBox {
+  display: flex;
+  gap: 0.5rem;
+  font-weight: 400;
+}
+
+.account {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.dropdown {
+  margin-top: 1rem;
+  visibility: hidden;
+  position: absolute;
+  padding: 1rem;
+  list-style: none;
+  background: #333333;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: rgb(250, 110, 63);
+}
+
+#show:hover + .dropdown,
+.dropdown:hover {
+  visibility: visible;
+  box-shadow: 0px 3px 5px -1px #ccc;
+  border-radius: 5px;
+}

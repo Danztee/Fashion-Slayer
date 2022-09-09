@@ -1,0 +1,23 @@
+#row {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  border-radius: 50px;
+}
+
+.footer {
+  background: #d8e2dc;
+  padding: 7rem 0;
+}
+
+.section {
+  font-weight: bold;
+}
+
+.ul {
+  list-style: none;
+  text-align: start;
+  padding: 0;
+}

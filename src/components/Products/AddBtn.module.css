@@ -1,0 +1,36 @@
+.cover {
+  position: relative;
+}
+
+.btn {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  position: absolute;
+  bottom: 5rem;
+  right: 0.1rem;
+  background-color: #febd0b;
+  border-radius: 5rem;
+}
+
+.cart {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btnContainer {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  font-size: 1rem;
+  border: solid 2px #febd0b;
+  background-color: #000;
+  color: #fff;
+  bottom: 5rem;
+}
