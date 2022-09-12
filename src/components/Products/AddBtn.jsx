@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import classes from "./AddBtn.module.css";
-import ProductView from "../ProductView/productView";
 
 function AddBtn() {
   const [hover, setHover] = useState(false);

@@ -5,7 +5,7 @@ import Account from "./Account";
 import Cart from "./Cart";
 import classes from "./NavBar.module.css";
 
-function Navbar() {
+function Navbar(props) {
   return (
     <nav className={classes.nav}>
       <div className="logo">
@@ -17,9 +17,8 @@ function Navbar() {
         style={{ background: "#d9d9d9", borderRadius: "5px" }}
       />
       <Account name="Account" icon={<i className="fa-regular fa-user"></i>} />
-      <Cart />
+      <Cart onShow={props.onShowCart} />
     </nav>
   );
 }
-
 export default Navbar;
