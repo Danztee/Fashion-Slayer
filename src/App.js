@@ -9,6 +9,7 @@ import SecProducts from "./components/Products/SecProducts";
 import Support from "./components/Support/Support";
 import Footer from "./components/Footer/Footer";
 import Cart from "./components/Cart/Cart";
+import CartProvider from "./components/store/CartProvider";
 
 function App() {
   const [cartIsShown, SetCartIsShown] = useState(false);
@@ -22,21 +23,21 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <CartProvider>
       {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Navbar onShowCart={showCartHandler} />
       <Header />
 
       <div className="container">
-        <Products />
-        <OneProducts />
+        <Products onShowCart={showCartHandler} />
+        <OneProducts onShow={showCartHandler} />
         <SecProducts />
       </div>
 
       <img src="./images/ad.png" alt="ad" className="ad" />
       <Support />
       <Footer />
-    </div>
+    </CartProvider>
   );
 }
 

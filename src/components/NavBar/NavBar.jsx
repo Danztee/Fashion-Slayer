@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
+import CartContext from "../store/cart-context";
 
 import Form from "./Form";
 import Account from "./Account";
-import Cart from "./Cart";
+import CartBar from "./CartBar";
 import classes from "./NavBar.module.css";
 
 function Navbar(props) {
+  const cartCtx = useContext(CartContext);
+
+  const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
+    return curNumber + item.amount;
+  }, 0);
+
   return (
     <nav className={classes.nav}>
       <div className="logo">
@@ -17,7 +24,7 @@ function Navbar(props) {
         style={{ background: "#d9d9d9", borderRadius: "5px" }}
       />
       <Account name="Account" icon={<i className="fa-regular fa-user"></i>} />
-      <Cart onShow={props.onShowCart} />
+      <CartBar onShow={props.onShowCart} onBadge={numberOfCartItems} />
     </nav>
   );
 }

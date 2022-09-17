@@ -27,7 +27,7 @@ function Header() {
         <li>Accessories</li>
       </ul>
 
-      <div className={classes.hero}>
+      <div id={classes.hero}>
         <img src="./images/background.png" alt="" />
       </div>
 

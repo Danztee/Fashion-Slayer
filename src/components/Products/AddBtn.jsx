@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import classes from "./AddBtn.module.css";
 
-function AddBtn() {
+function AddBtn(props) {
   const [hover, setHover] = useState(false);
 
   const onMouseEnter = () => {
@@ -20,6 +20,10 @@ function AddBtn() {
             className={classes.cart}
             style={{ paddingLeft: "5px" }}
             onMouseEnter={onMouseEnter}
+            onClick={() => {
+              props.onAdd();
+              props.onShow();
+            }}
           >
             ADD TO CART
           </p>
